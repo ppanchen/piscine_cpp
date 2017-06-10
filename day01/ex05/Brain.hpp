@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ppanchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/09 17:30:46 by ppanchen          #+#    #+#             */
-/*   Updated: 2017/06/10 17:13:36 by ppanchen         ###   ########.fr       */
+/*   Created: 2017/06/10 18:21:28 by ppanchen          #+#    #+#             */
+/*   Updated: 2017/06/10 18:26:23 by ppanchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#ifndef ZOMBIE_HPP
-# define ZOMBIE_HPP
+
 #include <iostream>
 
-class Zombie
+class Brain
 {
+	int size;
+	int weight;
+	int productivity;
 	public:
-		Zombie();
-		Zombie(std::string name);
-		Zombie(std::string name, std::string type);
-		Zombie(Zombie const &);
-		Zombie & operator=(Zombie const &);
-		~Zombie();
-		void announce(void);
-	private:
-		std::string name;
-		std::string type;
+		Brain();
+		~Brain();
+		Brain(Brain const &);
+		Brain & operator=(Brain const &);
+		void identify();
 };
-#endif
