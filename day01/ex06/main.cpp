@@ -1,34 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Brain.hpp                                          :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ppanchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/10 18:21:28 by ppanchen          #+#    #+#             */
-/*   Updated: 2017/06/11 20:10:20 by ppanchen         ###   ########.fr       */
+/*   Created: 2017/06/12 17:05:43 by ppanchen          #+#    #+#             */
+/*   Updated: 2017/06/12 17:46:17 by ppanchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#include "Weapon.hpp"
+#include "HumanA.hpp"
+#include "HumanB.hpp"
 
-class Brain
+int main()
 {
-	int size;
-	int weight;
-	int productivity;
-	public:
-		Brain();
-		~Brain();
-		Brain(Brain const &);
-		Brain & operator=(Brain const &);
-		std::string identify();
-		int getSize() const;
-		void setSize(int);
-		int getWeight() const;
-		void setWeight(int);
-		int getPr() const;
-		void setPr(int);
-};
-
-std::ostream & operator<<(std::ostream &strm, const Brain &inst);
+	Weapon        club = Weapon("crude spiked club");
+	HumanA bob("Bob", club);
+	bob.attack();
+	club.setType("some other type of club");
+	bob.attack();
+	
+	Weapon        club = Weapon("crude spiked club");
+	HumanB jim("Jim");
+	jim.setWeapon(club);
+	jim.attack();
+	club.setType("some other type of club");
+	jim.attack();
+}

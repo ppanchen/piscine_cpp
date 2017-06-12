@@ -1,34 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Brain.hpp                                          :+:      :+:    :+:   */
+/*   HumanB.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ppanchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/10 18:21:28 by ppanchen          #+#    #+#             */
-/*   Updated: 2017/06/11 20:10:20 by ppanchen         ###   ########.fr       */
+/*   Created: 2017/06/12 17:11:31 by ppanchen          #+#    #+#             */
+/*   Updated: 2017/06/12 17:41:39 by ppanchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#ifndef HUMANA_HPP
+# define HUMANA_HPP
 
-class Brain
+# include <iostream>
+# include "Weapon.hpp"
+
+class HumanB
 {
-	int size;
-	int weight;
-	int productivity;
-	public:
-		Brain();
-		~Brain();
-		Brain(Brain const &);
-		Brain & operator=(Brain const &);
-		std::string identify();
-		int getSize() const;
-		void setSize(int);
-		int getWeight() const;
-		void setWeight(int);
-		int getPr() const;
-		void setPr(int);
-};
-
-std::ostream & operator<<(std::ostream &strm, const Brain &inst);
+	Weapon *wp;
+	std::string name;
+public:
+	HumanB();
+	HumanB(std::string, Weapon);
+	HumanB(const HumanB &);
+	~HumanB();
+	HumanB & operator=(const HumanB &);
+	void attack();
+}
+#endif

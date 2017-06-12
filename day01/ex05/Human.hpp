@@ -1,34 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Brain.hpp                                          :+:      :+:    :+:   */
+/*   Human.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ppanchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/10 18:21:28 by ppanchen          #+#    #+#             */
-/*   Updated: 2017/06/11 20:10:20 by ppanchen         ###   ########.fr       */
+/*   Created: 2017/06/11 16:19:23 by ppanchen          #+#    #+#             */
+/*   Updated: 2017/06/11 20:20:59 by ppanchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
+#include "Brain.hpp"
 
-class Brain
+class Human
 {
-	int size;
-	int weight;
-	int productivity;
+	Brain *br;
 	public:
-		Brain();
-		~Brain();
-		Brain(Brain const &);
-		Brain & operator=(Brain const &);
+		Human();
+		virtual ~Human();
+		Human(Human const &);
+		Human & operator=(Human const &);
+		Brain & getBrain() const;
+		void setBrain(Brain *);
 		std::string identify();
-		int getSize() const;
-		void setSize(int);
-		int getWeight() const;
-		void setWeight(int);
-		int getPr() const;
-		void setPr(int);
+		friend std::ostream & operator<<(std::ostream &strm,  const Human &inst);
 };
-
-std::ostream & operator<<(std::ostream &strm, const Brain &inst);
