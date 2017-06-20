@@ -6,39 +6,33 @@
 /*   By: ppanchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/12 17:10:34 by ppanchen          #+#    #+#             */
-/*   Updated: 2017/06/12 17:41:57 by ppanchen         ###   ########.fr       */
+/*   Updated: 2017/06/14 15:24:57 by ppanchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.hpp"
 
-HumanA::HumanA()
+HumanA::HumanA(std::string name, Weapon & w): name(name), wp(w)
 {
-	wp = new Weapon();
+	return ;
 }
 
-HumanA::HumanA(std::string name, Weapon wp)
-{
-	this->name = name;
-	wp = new Weapon(wp);
-}
-
-HumanA::HumanA(const HumanA & hm)
+HumanA::HumanA(const HumanA & hm) : wp(hm.wp)
 {
 	*this = hm;
 }
 
 HumanA::~HumanA()
 {
-	delete wp;
+	return ;
 }
 
-HumanA & HumanA::operator=(const HumanA & hm)
+HumanA & HumanA::operator=(HumanA const  & hm)
 {
 	if (this != &hm)
 	{
 		this->name = hm.name;
-		this->Weapon = new Weapon(hm.Weapon);
+		this->wp = hm.wp;
 	}
 	return (*this);
 }

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex06/HumanA.cpp
+HumanA.hpp
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex06/HumanA.hpp
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex06/HumanA.hpp
+iostream
+-
+Weapon.hpp
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex06/Weapon.hpp
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex06/HumanB.cpp
+HumanB.hpp
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex06/HumanB.hpp
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex06/HumanB.hpp
+iostream
+-
+Weapon.hpp
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex06/Weapon.hpp
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex06/Weapon.cpp
+Weapon.hpp
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex06/Weapon.hpp
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex06/Weapon.hpp
+iostream
+-
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex06/main.cpp
+Weapon.hpp
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex06/Weapon.hpp
+HumanA.hpp
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex06/HumanA.hpp
+HumanB.hpp
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex06/HumanB.hpp
+

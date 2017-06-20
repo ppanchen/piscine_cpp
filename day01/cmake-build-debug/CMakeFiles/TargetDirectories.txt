@@ -1,0 +1,9 @@
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/cmake-build-debug/CMakeFiles/edit_cache.dir
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/cmake-build-debug/CMakeFiles/ex08.dir
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/cmake-build-debug/CMakeFiles/ex10.dir
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/cmake-build-debug/CMakeFiles/ex07.dir
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/cmake-build-debug/CMakeFiles/ex09.dir
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/cmake-build-debug/CMakeFiles/ex05.dir
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/cmake-build-debug/CMakeFiles/ex06.dir
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/cmake-build-debug/CMakeFiles/ex02.dir

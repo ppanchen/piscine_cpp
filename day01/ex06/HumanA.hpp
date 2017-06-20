@@ -6,7 +6,7 @@
 /*   By: ppanchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/12 17:11:31 by ppanchen          #+#    #+#             */
-/*   Updated: 2017/06/12 17:38:35 by ppanchen         ###   ########.fr       */
+/*   Updated: 2017/06/14 15:24:54 by ppanchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,13 @@
 
 class HumanA
 {
-	Weapon *wp;
+	Weapon & wp;
 	std::string name;
 public:
-	HumanA();
-	HumanA(std::string, Weapon);
+	HumanA(std::string, Weapon &);
 	HumanA(const HumanA &);
 	~HumanA();
-	HumanA & operator=(const HumanA &);
+	HumanA & operator=(HumanA const &);
 	void attack();
-}
+};
 #endif

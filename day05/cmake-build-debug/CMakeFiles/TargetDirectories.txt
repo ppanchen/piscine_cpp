@@ -1,0 +1,4 @@
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day05/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day05/cmake-build-debug/CMakeFiles/edit_cache.dir
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day05/cmake-build-debug/CMakeFiles/ex00.dir
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day05/cmake-build-debug/CMakeFiles/day05.dir

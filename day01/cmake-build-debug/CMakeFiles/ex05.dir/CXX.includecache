@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex05/Brain.cpp
+Brain.hpp
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex05/Brain.hpp
+string
+-
+strstream
+-
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex05/Brain.hpp
+iostream
+-
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex05/Human.cpp
+Human.hpp
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex05/Human.hpp
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex05/Human.hpp
+iostream
+-
+Brain.hpp
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex05/Brain.hpp
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex05/main.cpp
+Human.hpp
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day01/ex05/Human.hpp
+

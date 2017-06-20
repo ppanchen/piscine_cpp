@@ -6,21 +6,16 @@
 /*   By: ppanchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/12 17:10:34 by ppanchen          #+#    #+#             */
-/*   Updated: 2017/06/12 17:40:55 by ppanchen         ###   ########.fr       */
+/*   Updated: 2017/06/14 15:24:59 by ppanchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 
-HumanB::HumanB()
-{
-	wp = new Weapon();
-}
 
-HumanB::HumanB(std::string name, Weapon wp)
+HumanB::HumanB(std::string name)
 {
 	this->name = name;
-	wp = new Weapon(wp);
 }
 
 HumanB::HumanB(const HumanB & hm)
@@ -30,20 +25,30 @@ HumanB::HumanB(const HumanB & hm)
 
 HumanB::~HumanB()
 {
-	delete wp;
+	return ;
 }
 
-HumanB & HumanB::operator=(const HumanB & hm)
+HumanB & HumanB::operator=(HumanB const & hm)
 {
 	if (this != &hm)
 	{
 		this->name = hm.name;
-		this->Weapon = new Weapon(hm.Weapon);
+		this->wp = hm.wp;
 	}
 	return (*this);
 }
 
 void HumanB::attack()
 {
-	std::cout << name << " attacks with his " << wp.getType() << std::endl;
+	std::cout << name << " attacks with his " << wp->getType() << std::endl;
+}
+
+Weapon * HumanB::getWeapon() const
+{
+	return (wp);
+}
+
+void	HumanB::setWeapon(Weapon & wp)
+{
+	this->wp = &wp;
 }

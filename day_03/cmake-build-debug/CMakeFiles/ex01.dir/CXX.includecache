@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day_03/ex01/FragTrap.cpp
+FragTrap.hpp
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day_03/ex01/FragTrap.hpp
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day_03/ex01/FragTrap.hpp
+iostream
+-
+random
+-
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day_03/ex01/ScavTrap.cpp
+ScavTrap.hpp
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day_03/ex01/ScavTrap.hpp
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day_03/ex01/ScavTrap.hpp
+iostream
+-
+random
+-
+
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day_03/ex01/main.cpp
+FragTrap.hpp
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day_03/ex01/FragTrap.hpp
+ScavTrap.hpp
+/nfs/2016/p/ppanchen/projects/piscine_cpp/day_03/ex01/ScavTrap.hpp
+

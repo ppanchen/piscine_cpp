@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/ex07.dir/ex07/FileWorker.cpp.o CMakeFiles/ex07.dir/ex07/main.cpp.o  -o ex07 
