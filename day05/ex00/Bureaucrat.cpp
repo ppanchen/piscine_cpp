@@ -5,12 +5,11 @@
 #include "Bureaucrat.hpp"
 
 std::ostream &operator<<(std::ostream &os, const Bureaucrat &bureaucrat){
-	os << "name: " << bureaucrat.name << " grade: " << bureaucrat.grade;
+	os << "name: " << bureaucrat.getName() << " grade: " << bureaucrat.getGrade();
 	return os;
 }
 
-Bureaucrat::Bureaucrat(std::string name) : name(name){
-	return ;
+Bureaucrat::Bureaucrat(std::string name) : name(name), grade(150){
 }
 
 Bureaucrat::~Bureaucrat(){
